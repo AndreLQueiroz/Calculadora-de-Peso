@@ -1,0 +1,37 @@
+/*Variaveis*/
+
+:root{
+    --font-color1: #fff;
+    --font-color2: #000;
+    --font-color3: #ffff00;
+    --font-color4: #030436;
+    --bg-color1: #2d30f0;
+    --bg-color2: #f1e9e9;
+}
+/*reset base*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--bg-color1);
+}
+.container{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Responsividade*/
+
+@media(max-width: 500px){
+    .container{
+        justify-content: start;
+        padding: 15px;
+    }
+}
